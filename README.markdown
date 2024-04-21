@@ -206,7 +206,7 @@ Contains?
     workday.contains?(lunch) # => true
     lunch.contains?(workday) # => false
 
-    dinner = Shift.new(TimeOfDay.new(18), TimeOfDay.new(20))
+    dinner = Tod::Shift.new(Tod::TimeOfDay.new(18), Tod::TimeOfDay.new(20))
     dinner.overlaps?(lunch) # => false
 
 
